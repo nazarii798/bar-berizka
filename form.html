@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бар Берізка</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Дударя Назарія">
+    <meta name="description" content="Бар">
+    <meta name="keywords" content="Бар Берізка Полонне">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Berizka bar</div>
+            <nav class="nav">
+                <a href="index.html">Головна</a>
+                <a href="info.html">Про нас</a>
+                <a href="form.html" class="active">Бронювання</a>
+                <a href="shop.html">Меню</a>
+                <a href="gallery.html">Галерея</a>
+            </nav>
+        </div>
+
+    </header>
+    <main class="booking-section">
+        <div class="booking-card">
+            <h1>забронювати столик</h1>
+            <p class="subtitle">посмакуй у нашому бару</p>
+            
+            <form class="booking-form">
+                <div class="form-group full-width">
+                    <label for="full-name">Ваше повне ім'я</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Іван Іванов" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="date">Дата бронювання</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="time">Бажаний час</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="guests">Кількість бажаних гостей</label>
+                    <input type="number" id="guests" name="guests" min="1" placeholder="наприклад, 2" required>
+                </div>
+
+                <button type="submit" class="btn-confirm">Підтвердити бронювання</button>
+            </form>
+        </div>
+    </main>
+    </body>
